@@ -19,4 +19,10 @@ public class Googlesearchpage {
 		element = driver.findElement(By.xpath("//button[@id=\"submit_search\"]"));
 		return element;
 	}
+	
+	public static WebElement item(WebDriver driver) {
+		element = driver.findElement(By.xpath("//div[@class='product-overlay']//p[contains(text(),'Men Tshirt')]"));
+		return element;
+	}
+	
 }
